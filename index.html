@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "img/content-icons/logo-icon.svg">
+    <title>LIMOGROUP</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+  <body>
+    <div class="wrapper">
+      <header class="header" data-lp>
+  <div class="header__container">
+    <a href="https://limogroup.ch/" target="_blank" class="header__logo"
+      ><img src="img/content-icons/logo.png" alt=""
+    /></a>
+    <div class="header__menu menu">
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a data-goto=".hero-section" id="#home" class="menu__link active"
+              >Home</a
+            >
+          </li>
+          <li class="menu__item">
+            <a data-goto=".about-us-page" id="#about" class="menu__link"
+              >About Us</a
+            >
+          </li>
+          <li class="menu__item">
+            <a data-goto=".services-page" id="#services" class="menu__link"
+              >Our Services</a
+            >
+          </li>
+          <li class="menu__item">
+            <a data-goto=".fleets" id="#fleets" class="menu__link">Fleets</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__actions actions-header">
+      <a href="tel:+41798969696" class="actions-header__call _icon-phone"
+        ><span>+41 79 896 96 96</span></a
+      >
+      <div data-spollers="767.98,min" class="langs-actions__spoiler">
+        <button type="button" data-spoller class="langs-actions__title">
+          ENG
+        </button>
+        <div class="langs-actions__body">
+          <ul data-da=".menu__list, 767.98" class="lang-list">
+            <li class="lang-list__item">
+              <a class="langs-actions__lang" href="">ENG</a>
+            </li>
+            <li class="lang-list__item">
+              <a class="langs-actions__lang" href="">LANG</a>
+            </li>
+            <li class="lang-list__item">
+              <a class="langs-actions__lang" href="">LANG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button data-popup="#contact" class="actions-header__contact-btn">
+        Contact Us
+      </button>
+    </div>
+    <button type="button" class="icon-menu"><span></span></button>
+  </div>
+</header>
+
+      <main class="page">
+        <section class="page__hero-section hero-section">
+          <div class="hero-section__container">
+            <div class="hero-section__body ibg">
+              <img src="img/content-images/main-img.png" alt="" />
+              <div class="hero-section__content hero-section-content">
+                <h1 class="hero-section-content__title">
+                  One global <br />
+                  solution
+                </h1>
+                <div class="hero-section-content__subtitle">
+                  Offering the Best Limo Service in Switzerland, Experience it
+                  Now!
+                </div>
+                <a href="booking.html" class="hero-section-content__button"
+                  >Booking</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__tabs tabs">
+          <div class="tabs__container">
+            <div class="tabs__ride-details ride-details">
+              <div data-tabs class="ride-details__tabs">
+                <nav data-tabs-titles class="ride-details__navigation">
+                  <button type="button" class="ride-details__title">
+                    Distance
+                  </button>
+                  <button type="button" class="ride-details__title">
+                    Hourly
+                  </button>
+                </nav>
+                <div data-tabs-body class="ride-details__content">
+                  <form id="distanceForm" action="booking.html" method="GET">
+                    <div class="ride-details__block block-ride-details">
+                      <div class="block-ride-details__fields">
+                        <div class="block-ride-details__field">
+                          <label
+                            for="date"
+                            class="block-ride-details__label date-label"
+                            >Pick Up Date</label
+                          >
+                          <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            class="block-ride-details__input date-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="time"
+                            class="block-ride-details__label time-label"
+                            >Pick Up Time</label
+                          >
+                          <input
+                            type="time"
+                            name="time"
+                            id="time"
+                            class="block-ride-details__input time-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="pickup"
+                            class="block-ride-details__label pickup-label"
+                            >Pick Up Location</label
+                          >
+                          <input
+                            type="text"
+                            name="pickup"
+                            id="pickup"
+                            class="block-ride-details__input"
+                            placeholder="Enter a location"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="dropoff"
+                            class="block-ride-details__label location-label"
+                            >Drop Off Location</label
+                          >
+                          <input
+                            type="text"
+                            name="dropoff"
+                            id="dropoff"
+                            class="block-ride-details__input"
+                            placeholder="Enter a location"
+                          />
+                        </div>
+                      </div>
+                      <button type="submit" class="block-ride-details__button">
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                  <form id="hourlyForm" action="booking.html" method="GET">
+                    <div class="ride-details__block block-ride-details">
+                      <div class="block-ride-details__fields">
+                        <div class="block-ride-details__field">
+                          <label
+                            for="date"
+                            class="block-ride-details__label date-label"
+                            >Pick Up Date</label
+                          >
+                          <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            class="block-ride-details__input date-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="time"
+                            class="block-ride-details__label time-label"
+                            >Pick Up Time</label
+                          >
+                          <input
+                            type="time"
+                            name="time"
+                            id="time"
+                            class="block-ride-details__input time-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="pickup"
+                            class="block-ride-details__label pickup-label"
+                            >Pick Up Location</label
+                          >
+                          <input
+                            type="text"
+                            name="pickup"
+                            id="pickup"
+                            class="block-ride-details__input"
+                            placeholder="Enter a location"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="duration"
+                            class="block-ride-details__label location-label"
+                            >Duration (in hours)</label
+                          >
+                          <select
+                            name="duration"
+                            id="duration"
+                            class="block-duration-select"
+                            data-show-selected
+                            data-speed="300"
+                            data-scroll="200"
+                          >
+                            <option value="1" selected>1 hour</option>
+                            <option value="2">2 hours</option>
+                            <option value="3">3 hours</option>
+                            <option value="4">4 hours</option>
+                            <option value="5">5 hours</option>
+                            <option value="6">6 hours</option>
+                            <option value="7">7 hours</option>
+                            <option value="8">8 hours</option>
+                            <option value="9">9 hours</option>
+                            <option value="10">10 hours</option>
+                            <option value="11">11 hours</option>
+                            <option value="12">12 hours</option>
+                            <option value="13">13 hours</option>
+                            <option value="14">14 hours</option>
+                            <option value="15">15 hours</option>
+                            <option value="16">16 hours</option>
+                            <option value="17">17 hours</option>
+                            <option value="18">18 hours</option>
+                            <option value="19">19 hours</option>
+                            <option value="20">20 hours</option>
+                            <option value="21">21 hours</option>
+                            <option value="22">22 hours</option>
+                          </select>
+                        </div>
+                      </div>
+                      <button type="submit" class="block-ride-details__button">
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="page__about-us about-us-page">
+          <svg
+            class="lines lines_01"
+            width="1913"
+            height="707"
+            viewBox="0 0 1913 707"
+            fill="none"
+          >
+            <path
+              class="lines__path"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M584.202 25.1366C473.048 -21.6781 365.948 0.825888 306.28 60.2431C289.429 77.0233 276.365 96.7456 268.066 118.675C248.649 140.812 237.273 167.704 236.772 197.471C236.165 233.516 251.505 273.708 287.689 314.72C313.694 344.194 356.939 371.519 412.997 395.366C445.211 412.97 482.531 428.985 524.01 443.172C571.063 459.266 623.483 473.012 679.899 484.056C674.08 493.579 667.496 502.823 660.111 511.726C620.335 559.68 557.314 597.768 465.597 616.129C171.975 674.91 29.1421 557.33 -5.54981 491.41L-6.43475 491.876C28.5143 558.284 171.854 675.954 465.793 617.11C557.688 598.713 620.93 560.529 660.881 512.364C668.379 503.325 675.055 493.935 680.946 484.26C704.122 488.78 727.971 492.844 752.396 496.427C743.433 517.903 731.957 538.494 717.761 557.777C674.529 616.505 606.046 663.133 506.398 685.61C187.395 757.565 32.1813 613.644 -5.53926 532.886L-6.4453 533.309C31.5008 614.55 187.221 758.63 506.618 686.585C606.47 664.062 675.174 617.315 718.567 558.37C732.864 538.949 744.411 518.207 753.417 496.577C791.745 502.176 831.489 506.593 872.282 509.735C1134.15 529.902 1439.36 497.499 1691.21 387.458C1791.88 343.47 1868.14 323.103 1925.11 319.155C1982.09 315.206 2019.72 327.675 2043.22 349.292C2066.72 370.91 2076.18 401.758 2076.64 434.761C2077.09 467.764 2068.53 502.868 2056.05 532.906L2056.97 533.289C2069.49 503.16 2078.09 467.919 2077.64 434.747C2077.18 401.575 2067.67 370.421 2043.9 348.556C2020.12 326.69 1982.18 314.197 1925.05 318.157C1867.91 322.117 1791.53 342.53 1690.81 386.542C1439.15 496.501 1134.11 528.896 872.359 508.738C831.675 505.604 792.038 501.202 753.812 495.624C756.279 489.644 758.552 483.598 760.636 477.493C777.212 479.311 794.007 480.92 810.989 482.31C1055.81 502.351 1339.49 476.926 1567.11 376.927C1736.67 302.44 1851.01 262.376 1917.2 253.201C1933.74 250.908 1947.24 250.549 1957.84 252.053C1968.44 253.557 1976.07 256.917 1980.93 262.018C1985.78 267.107 1987.94 273.995 1987.44 282.698C1986.95 291.412 1983.79 301.919 1978.05 314.177L1978.96 314.601C1984.73 302.286 1987.94 291.648 1988.44 282.755C1988.95 273.849 1986.74 266.665 1981.66 261.328C1976.58 256.004 1968.7 252.584 1957.98 251.063C1947.26 249.541 1933.65 249.911 1917.06 252.211C1850.72 261.407 1736.25 301.529 1566.71 376.011C1339.28 475.923 1055.79 501.346 811.071 481.313C794.173 479.93 777.461 478.33 760.965 476.523C773.892 438.249 779.417 397.714 778.633 357.15C775.88 214.825 695.433 71.984 584.202 25.1366ZM759.947 476.411C772.884 438.197 778.417 397.705 777.633 357.17C774.885 215.12 694.582 72.7107 583.814 26.0582C472.967 -20.6272 366.318 1.86884 306.986 60.9517C290.868 77.0015 278.239 95.7531 269.96 116.558C273.526 112.652 277.347 108.9 281.406 105.313C336.334 56.7677 434.903 38.3924 537.198 76.6298C639.579 114.899 713.654 231.604 716.189 347.92C717.082 388.91 709.092 429.865 690.319 467.332C713.018 470.767 736.259 473.803 759.947 476.411ZM267.08 121.354C248.864 142.939 238.253 168.882 237.772 197.488C237.17 233.223 252.375 273.182 288.439 314.059C312.889 341.771 352.722 367.629 404.265 390.483C365.128 368.088 334.126 343.239 313.114 316.406C273.809 266.21 257.162 217.039 257.82 172.965C258.092 154.792 261.305 137.493 267.08 121.354ZM413.433 394.464C370.272 370.873 336.343 344.449 313.901 315.789C274.707 265.735 258.166 216.781 258.82 172.98C259.104 153.981 262.623 135.944 268.938 119.198C272.973 114.608 277.359 110.224 282.068 106.062C336.663 57.812 434.822 39.4296 536.848 77.5665C638.788 115.671 712.662 231.97 715.189 347.942C716.082 388.891 708.077 429.787 689.279 467.175C614.108 455.752 544.893 439.955 485.005 420.818C459.341 412.618 435.396 403.806 413.433 394.464ZM422.649 399.386C452.642 415.036 486.768 429.378 524.334 442.226C571.44 458.338 623.94 472.097 680.453 483.145C683.44 478.206 686.222 473.193 688.804 468.114C613.712 456.688 544.558 440.898 484.7 421.771C462.71 414.744 441.97 407.266 422.649 399.386ZM681.498 483.349C704.624 487.853 728.42 491.903 752.792 495.475C755.259 489.508 757.532 483.474 759.617 477.381C735.879 474.764 712.591 471.718 689.846 468.272C687.265 473.366 684.484 478.394 681.498 483.349Z"
+              fill="url(#paint0_linear_323_18)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_323_18"
+                x1="1391.24"
+                y1="1162.6"
+                x2="930.44"
+                y2="52.394"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="about-us-page__container">
+            <div class="about-us-page__header">
+              <h2 class="about-us-page__title title">About Us</h2>
+              <div class="about-us-page__subtitle subtitle">
+                The best offer of world-class transportation solutions for your
+                events
+              </div>
+            </div>
+            <div class="about-us-page__content">
+              <div class="about-us-page__image-ibg">
+                <img
+                  src="img/content-images/about.jpg"
+                  alt="man sitting in the car"
+                />
+              </div>
+              <div class="about-us-page__text">
+                <p>
+                  A Chauffeur Car Service company at your disposal for all your
+                  trips.
+                </p>
+                <br />
+                <p>
+                  Recognized for its professionalism towards companies,
+                  professionals and individuals, Limogroup is a company based in
+                  Switzerland. Specialized in the tailor-made transport with
+                  chauffeur, we offer high end services for your private and
+                  business trips.
+                </p>
+                <br />
+                <p>
+                  We have a fleet of prestigious and modern vehicles for a
+                  comfortable and secure accompaniment in the destinations of
+                  your choice. Our mission is to provide you with an excellent
+                  service as well as a personalized welcome for your short and
+                  long journeys.
+                </p>
+                <br />
+                <p>
+                  Thanks to our experience, we guarantee a high-end
+                  accompaniment to meet all your needs: rental of a chauffeured
+                  car, transfers, group transfers, private events, weddings,
+                  conferences and exhibitions, meet & greet... Our bilingual
+                  drivers are available to guide you in all your trips in
+                  Switzerland and abroad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__services services-page">
+          <svg
+            class="lines lines_02"
+            width="1913"
+            height="707"
+            viewBox="0 0 1913 707"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="lines__path"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1438.37 25.1314C1558.65 -21.6733 1674.53 0.82527 1739.1 60.2295C1757.33 77.007 1771.47 96.7289 1780.45 118.66C1801.47 140.796 1813.79 167.691 1814.33 197.471C1814.98 233.529 1798.38 273.726 1759.22 314.735C1731.07 344.205 1684.28 371.527 1623.61 395.372C1588.74 412.975 1548.35 428.99 1503.46 443.176C1452.54 459.27 1395.8 473.016 1334.74 484.06C1341.03 493.576 1348.15 502.814 1356.14 511.711C1399.19 559.669 1467.41 597.764 1566.69 616.128C1884.52 674.915 2039.13 557.318 2076.68 491.396L2077.55 491.891C2039.73 558.297 1884.61 675.949 1566.51 617.111C1467.07 598.717 1398.63 560.54 1355.4 512.379C1347.27 503.333 1340.04 493.936 1333.66 484.254C1308.56 488.777 1282.73 492.845 1256.27 496.431C1265.97 517.899 1278.38 538.485 1293.74 557.762C1340.54 616.492 1414.67 663.127 1522.53 685.608C1867.84 757.572 2035.85 613.628 2076.67 532.872L2077.56 533.323C2036.49 614.567 1867.97 758.623 1522.33 686.587C1414.27 664.068 1339.92 617.328 1292.96 558.386C1277.48 538.958 1264.98 518.209 1255.23 496.571C1213.74 502.173 1170.71 506.592 1126.54 509.735C843.126 529.902 512.805 497.499 240.245 387.464C131.281 343.474 48.7362 323.104 -12.939 319.155C-74.6155 315.205 -115.365 327.678 -140.813 349.305C-166.255 370.926 -176.49 401.771 -176.979 434.761C-177.469 467.757 -168.205 502.857 -154.697 532.892L-155.609 533.302C-169.16 503.171 -178.471 467.925 -177.979 434.747C-177.487 401.563 -167.186 370.404 -141.461 348.543C-115.743 326.687 -74.697 314.198 -12.875 318.157C48.9482 322.116 131.604 342.526 240.619 386.536C513.003 496.501 843.163 528.897 1126.47 508.737C1170.51 505.603 1213.42 501.2 1254.81 495.62C1252.14 489.64 1249.68 483.594 1247.42 477.489C1229.47 479.309 1211.27 480.919 1192.88 482.31C927.917 502.35 620.903 476.926 374.554 376.932C191.046 302.446 67.2816 262.378 -4.36401 253.202C-22.271 250.909 -36.8972 250.549 -48.3738 252.054C-59.8557 253.559 -68.1321 256.925 -73.4019 262.032C-78.6541 267.123 -80.9805 274.005 -80.4451 282.695C-79.9087 291.403 -76.498 301.906 -70.2869 314.163L-71.179 314.616C-77.4192 302.3 -80.895 291.658 -81.4434 282.757C-81.9927 273.839 -79.6018 266.649 -74.0977 261.314C-68.6113 255.997 -60.0928 252.582 -48.5037 251.062C-36.9094 249.542 -22.1892 249.911 -4.23682 252.21C67.5546 261.405 191.431 301.523 374.93 376.006C621.09 475.923 927.937 501.346 1192.8 481.313C1211.1 479.929 1229.2 478.328 1247.07 476.52C1233.08 438.247 1227.1 397.713 1227.95 357.149C1230.93 214.802 1318.01 71.969 1438.37 25.1314ZM1248.09 476.415C1234.09 438.199 1228.1 397.706 1228.95 357.17C1231.92 215.143 1318.82 72.7258 1438.73 26.0634C1558.73 -20.6319 1674.19 1.86954 1738.42 60.9654C1755.9 77.0454 1769.58 95.8344 1778.54 116.68C1774.64 112.725 1770.46 108.928 1766.02 105.3C1706.59 56.7682 1599.93 38.396 1489.24 76.6256C1378.46 114.885 1298.28 231.579 1295.53 347.919C1294.56 388.91 1303.21 429.864 1323.52 467.328C1298.93 470.766 1273.76 473.805 1248.09 476.415ZM1781.48 121.222C1801.28 142.838 1812.81 168.83 1813.33 197.489C1813.98 233.21 1797.53 273.165 1758.49 314.044C1732 341.789 1688.82 367.674 1632.95 390.549C1675.35 368.141 1708.94 343.275 1731.7 316.421C1774.24 266.227 1792.26 217.05 1791.55 172.964C1791.25 154.741 1787.76 137.397 1781.48 121.222ZM1623.2 394.458C1669.92 370.864 1706.64 344.437 1730.94 315.774C1773.36 265.718 1791.26 216.769 1790.55 172.98C1790.24 153.988 1786.43 135.955 1779.6 119.212C1775.23 114.622 1770.48 110.238 1765.39 106.075C1706.28 57.8116 1600.01 39.4261 1489.57 77.5708C1379.21 115.686 1299.27 231.994 1296.53 347.943C1295.57 388.891 1304.23 429.789 1324.58 467.18C1405.96 455.757 1480.89 439.957 1545.73 420.815C1573.51 412.614 1599.42 403.801 1623.2 394.458ZM1613.33 399.328C1580.84 415 1543.87 429.36 1503.16 442.223C1452.16 458.34 1395.32 472.102 1334.14 483.152C1330.9 478.212 1327.89 473.198 1325.09 468.118C1406.37 456.693 1481.22 440.902 1546.01 421.774C1569.87 414.729 1592.37 407.23 1613.33 399.328ZM1333.07 483.345C1308.02 487.852 1282.24 491.906 1255.84 495.48C1253.17 489.513 1250.71 483.478 1248.45 477.384C1274.17 474.765 1299.39 471.716 1324.04 468.267C1326.83 473.361 1329.84 478.39 1333.07 483.345Z"
+              fill="url(#paint0_linear_323_19)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_323_19"
+                x1="564.892"
+                y1="1162.6"
+                x2="1000.01"
+                y2="28.0082"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="services-page__container">
+            <div class="services-page__header">
+              <h2 class="services-page__title title">Our Services</h2>
+              <div class="services-page__subtitle subtitle">
+                Worldwide fast & easy access for all occasions.
+              </div>
+            </div>
+            <div class="services-page__cards">
+              <article class="services-page__article article-services">
+                <div class="article-services__image-ibg">
+                  <a href="booking.html"
+                    ><img src="img/content-images/services-01.jpg" alt=""
+                  /></a>
+                </div>
+                <h3 class="article-services__label">Airport transfers</h3>
+                <p class="article-services__text">
+                  With additional wait time and flight tracking in case of
+                  delays, our service is optimized to make every airport
+                  transfer a breeze.
+                </p>
+                <a
+                  href="booking.html"
+                  class="article-services__button _icon-arrow"
+                  >Booking</a
+                >
+              </article>
+              <article class="services-page__article article-services">
+                <div class="article-services__image-ibg">
+                  <a href="booking.html"
+                    ><img src="img/content-images/services-02.jpg" alt=""
+                  /></a>
+                </div>
+                <h3 class="article-services__label">Intercity Rides</h3>
+                <p class="article-services__text">
+                  Your stress-free solution for traveling between cities, with
+                  chauffeurs across the globe.
+                </p>
+                <a
+                  href="booking.html"
+                  class="article-services__button _icon-arrow"
+                  >Booking</a
+                >
+              </article>
+              <article class="services-page__article article-services">
+                <div class="article-services__image-ibg">
+                  <a href="booking.html"
+                    ><img src="img/content-images/services-03.jpg" alt=""
+                  /></a>
+                </div>
+                <h3 class="article-services__label">Business Meeting</h3>
+                <p class="article-services__text">
+                  Concentrate on your meeting with your partners, forget about
+                  the road and the car, which will distract your thoughts.
+                </p>
+                <a
+                  href="booking.html"
+                  class="article-services__button _icon-arrow"
+                  >Booking</a
+                >
+              </article>
+              <article class="services-page__article article-services">
+                <div class="article-services__image-ibg">
+                  <a href="booking.html"
+                    ><img src="img/content-images/services-04.jpg" alt=""
+                  /></a>
+                </div>
+                <h3 class="article-services__label">Wedding Parties</h3>
+                <p class="article-services__text">
+                  Our friendly, and attentive service combined with thorough
+                  attention to detail ensure you can truly relax and enjoy your
+                  special day.
+                </p>
+                <a
+                  href="booking.html"
+                  class="article-services__button _icon-arrow"
+                  >Booking</a
+                >
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="page__fleets fleets">
+          <div class="fleets__container">
+            <div class="fleets__header">
+              <h2 class="fleets__title title">Our Fleets</h2>
+              <div class="fleets__subtitle subtitle">
+                Choose according to your desire and circumstances
+              </div>
+            </div>
+            <div class="fleets__slider slider-fleets -ibg">
+              <svg
+                class="lines lines_03"
+                width="1913"
+                height="707"
+                viewBox="0 0 1913 707"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="lines__path"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M461.241 25.1314C340.963 -21.6733 225.079 0.82527 160.514 60.2295C142.279 77.007 128.139 96.7289 119.156 118.66C98.1428 140.796 85.8251 167.691 85.2827 197.471C84.6259 233.529 101.235 273.726 140.395 314.735C168.536 344.205 215.336 371.527 276.004 395.372C310.867 412.975 351.257 428.99 396.147 443.176C447.075 459.27 503.812 473.016 564.875 484.06C558.581 493.576 551.458 502.814 543.471 511.711C500.417 559.669 432.2 597.764 332.917 616.128C15.0909 674.915 -139.522 557.318 -177.071 491.396L-177.94 491.891C-140.115 558.296 14.9998 675.949 333.099 617.111C432.542 598.717 500.98 560.54 544.215 512.379C552.336 503.333 559.567 493.936 565.946 484.254C591.051 488.777 616.885 492.845 643.344 496.431C633.644 517.899 621.227 538.485 605.867 557.762C559.074 616.492 484.946 663.127 377.078 685.608C31.7751 757.572 -136.235 613.628 -177.059 532.872L-177.951 533.323C-136.88 614.567 31.6367 758.623 377.282 686.587C485.336 664.068 559.687 617.328 606.649 558.386C622.128 538.958 634.628 518.209 644.378 496.571C685.873 502.173 728.902 506.592 773.068 509.735C1056.48 529.902 1386.81 497.499 1659.37 387.464C1768.33 343.474 1850.87 323.104 1912.55 319.155C1974.23 315.205 2014.98 327.678 2040.42 349.305C2065.87 370.926 2076.1 401.771 2076.59 434.761C2077.08 467.757 2067.82 502.857 2054.31 532.892L2055.22 533.302C2068.77 503.171 2078.08 467.925 2077.59 434.747C2077.1 401.563 2066.8 370.404 2041.07 348.543C2015.35 326.687 1974.31 314.198 1912.49 318.157C1850.66 322.116 1768.01 342.526 1658.99 386.536C1386.61 496.501 1056.45 528.897 773.139 508.737C729.096 505.604 686.187 501.2 644.805 495.62C647.474 489.64 649.933 483.594 652.188 477.489C670.144 479.309 688.336 480.919 706.73 482.31C971.694 502.351 1278.71 476.926 1525.06 376.932C1708.56 302.446 1832.33 262.378 1903.97 253.202C1921.88 250.909 1936.51 250.549 1947.98 252.054C1959.47 253.559 1967.74 256.925 1973.01 262.032C1978.27 267.123 1980.59 274.005 1980.06 282.695C1979.52 291.403 1976.11 301.906 1969.9 314.163L1970.79 314.616C1977.03 302.3 1980.51 291.658 1981.05 282.757C1981.6 273.839 1979.21 266.649 1973.71 261.314C1968.22 255.997 1959.7 252.582 1948.11 251.062C1936.52 249.542 1921.8 249.911 1903.85 252.21C1832.06 261.405 1708.18 301.523 1524.68 376.006C1278.52 475.923 971.674 501.346 706.806 481.313C688.507 479.929 670.408 478.328 652.545 476.52C666.533 438.247 672.512 397.713 671.663 357.149C668.683 214.802 581.602 71.969 461.241 25.1314ZM651.518 476.415C665.523 438.199 671.512 397.706 670.663 357.17C667.69 215.143 580.79 72.7258 460.878 26.0634C340.882 -20.6319 225.421 1.86954 161.191 60.9654C143.714 77.0454 130.029 95.8344 121.071 116.68C124.969 112.725 129.148 108.928 133.592 105.3C193.025 56.7682 299.678 38.396 410.37 76.6256C521.15 114.885 601.335 231.579 604.079 347.919C605.046 388.91 596.399 429.864 576.087 467.328C600.678 470.766 625.855 473.805 651.518 476.415ZM118.134 121.222C98.3346 142.838 86.8045 168.83 86.2825 197.489C85.6319 233.21 102.082 273.165 141.118 314.044C167.611 341.789 210.791 367.675 266.665 390.549C224.26 368.141 190.671 343.275 167.912 316.421C125.373 266.227 107.351 217.05 108.064 172.964C108.358 154.741 111.854 137.397 118.134 121.222ZM276.412 394.458C229.693 370.864 192.967 344.437 168.675 315.774C126.253 265.718 108.356 216.769 109.064 172.98C109.371 153.988 113.178 135.955 120.011 119.212C124.379 114.622 129.126 110.238 134.224 106.075C193.329 57.8116 299.597 39.4261 410.044 77.5708C520.404 115.686 600.345 231.994 603.08 347.943C604.045 388.891 595.381 429.789 575.029 467.18C493.65 455.757 418.717 439.957 353.884 420.815C326.105 412.614 300.186 403.801 276.412 394.458ZM286.281 399.328C318.771 415 355.745 429.36 396.449 442.223C447.449 458.34 504.288 472.102 565.473 483.152C568.708 478.212 571.72 473.198 574.516 468.118C493.238 456.693 418.388 440.902 353.601 421.774C329.739 414.729 307.238 407.23 286.281 399.328ZM566.542 483.345C591.593 487.852 617.371 491.906 643.772 495.48C646.442 489.513 648.904 483.478 651.161 477.384C625.445 474.765 600.216 471.716 575.576 468.267C572.783 473.361 569.773 478.39 566.542 483.345Z"
+                  fill="url(#paint0_linear_333_32)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_333_32"
+                    x1="1334.72"
+                    y1="1162.6"
+                    x2="899.6"
+                    y2="28.0082"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="white" />
+                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <img src="img/content-images/slider-main/slide-bg.jpg" alt="" />
+              <div class="fleets__swiper">
+                <div class="slider-fleets__slide slide-fleets">
+                  <div class="slide-fleets__top">
+                    <div class="slide-fleets__left">
+                      <div class="slide-fleets__model">
+                        Mercedes Benz V Class
+                      </div>
+                      <div class="slide-fleets__passengers">Passengers: 6</div>
+                      <div class="slide-fleets__transmission">
+                        Transmission: automatic
+                      </div>
+                    </div>
+                    <div class="slide-fleets__price">
+                      <span>190$ / </span>per hour
+                    </div>
+                  </div>
+                  <a href="booking.html" class="slide-fleets__button"
+                    >Get Limousine</a
+                  >
+                  <div class="slide-fleets__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/v-class.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider-fleets__slide slide-fleets">
+                  <div class="slide-fleets__top">
+                    <div class="slide-fleets__left">
+                      <div class="slide-fleets__model">
+                        Mersedes Benz S-Class
+                      </div>
+                      <div class="slide-fleets__passengers">Passengers: 4</div>
+                      <div class="slide-fleets__transmission">
+                        Transmission: automatic
+                      </div>
+                    </div>
+                    <div class="slide-fleets__price">
+                      <span>190$ / </span>per hour
+                    </div>
+                  </div>
+                  <a href="booking.html" class="slide-fleets__button"
+                    >Get Limousine</a
+                  >
+                  <div class="slide-fleets__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/s-class.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider-fleets__slide slide-fleets">
+                  <div class="slide-fleets__top">
+                    <div class="slide-fleets__left">
+                      <div class="slide-fleets__model">
+                        BMW M5 F90 Competition
+                      </div>
+                      <div class="slide-fleets__passengers">Passengers: 4</div>
+                      <div class="slide-fleets__transmission">
+                        Transmission: automatic
+                      </div>
+                    </div>
+                    <div class="slide-fleets__price">
+                      <span>190$ / </span>per hour
+                    </div>
+                  </div>
+                  <a href="booking.html" class="slide-fleets__button"
+                    >Get Limousine</a
+                  >
+                  <div class="slide-fleets__image-ibg">
+                    <img src="img/content-images/slider-main/m5.png" alt="" />
+                  </div>
+                </div>
+                <div class="slider-fleets__slide slide-fleets">
+                  <div class="slide-fleets__top">
+                    <div class="slide-fleets__left">
+                      <div class="slide-fleets__model">
+                        Mercedes Benz V Class
+                      </div>
+                      <div class="slide-fleets__passengers">Passengers: 6</div>
+                      <div class="slide-fleets__transmission">
+                        Transmission: automatic
+                      </div>
+                    </div>
+                    <div class="slide-fleets__price">
+                      <span>190$ / </span>per hour
+                    </div>
+                  </div>
+                  <a href="booking.html" class="slide-fleets__button"
+                    >Get Limousine</a
+                  >
+                  <div class="slide-fleets__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/v-class.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider-fleets__slide slide-fleets">
+                  <div class="slide-fleets__top">
+                    <div class="slide-fleets__left">
+                      <div class="slide-fleets__model">
+                        Mersedes Benz S-Class
+                      </div>
+                      <div class="slide-fleets__passengers">Passengers: 4</div>
+                      <div class="slide-fleets__transmission">
+                        Transmission: automatic
+                      </div>
+                    </div>
+                    <div class="slide-fleets__price">
+                      <span>190$ / </span>per hour
+                    </div>
+                  </div>
+                  <a href="booking.html" class="slide-fleets__button"
+                    >Get Limousine</a
+                  >
+                  <div class="slide-fleets__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/s-class.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="slider-fleets__slide slide-fleets">
+                  <div class="slide-fleets__top">
+                    <div class="slide-fleets__left">
+                      <div class="slide-fleets__model">
+                        BMW M5 F90 Competition
+                      </div>
+                      <div class="slide-fleets__passengers">Passengers: 4</div>
+                      <div class="slide-fleets__transmission">
+                        Transmission: automatic
+                      </div>
+                    </div>
+                    <div class="slide-fleets__price">
+                      <span>190$ / </span>per hour
+                    </div>
+                  </div>
+                  <a href="booking.html" class="slide-fleets__button"
+                    >Get Limousine</a
+                  >
+                  <div class="slide-fleets__image-ibg">
+                    <img src="img/content-images/slider-main/m5.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="slider-fleets__navigation">
+                <button
+                  type="button"
+                  class="slider-fleets__button slider-fleets__button-prev"
+                >
+                  <svg
+                    width="55"
+                    height="16"
+                    viewBox="0 0 55 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M53.5078 7C54.06 7 54.5078 7.44772 54.5078 8C54.5078 8.55228 54.06 9 53.5078 9V7ZM0.300644 8.70711C-0.0898781 8.31658 -0.0898781 7.68342 0.300644 7.29289L6.6646 0.928932C7.05513 0.538408 7.68829 0.538408 8.07882 0.928932C8.46935 1.31946 8.46935 1.95262 8.07882 2.34315L2.42197 8L8.07882 13.6569C8.46935 14.0474 8.46935 14.6805 8.07882 15.0711C7.68829 15.4616 7.05513 15.4616 6.6646 15.0711L0.300644 8.70711ZM53.5078 9H1.00775V7H53.5078V9Z"
+                      fill="#A4A4A4"
+                    />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="slider-fleets__button slider-fleets__button-next"
+                >
+                  <svg
+                    width="55"
+                    height="16"
+                    viewBox="0 0 55 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.00775 7C0.455467 7 0.00775146 7.44772 0.00775146 8C0.00775146 8.55228 0.455467 9 1.00775 9V7ZM54.2149 8.70711C54.6054 8.31658 54.6054 7.68342 54.2149 7.29289L47.8509 0.928932C47.4604 0.538408 46.8272 0.538408 46.4367 0.928932C46.0462 1.31946 46.0462 1.95262 46.4367 2.34315L52.0935 8L46.4367 13.6569C46.0462 14.0474 46.0462 14.6805 46.4367 15.0711C46.8272 15.4616 47.4604 15.4616 47.8509 15.0711L54.2149 8.70711ZM1.00775 9H53.5078V7H1.00775V9Z"
+                      fill="#A4A4A4"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="fleets__thumbs thumbs-fleets">
+              <div class="thumbs-fleets__swiper">
+                <div class="thumbs-fleets__slide thumbs-slide">
+                  <div class="thumbs-slide__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/v-clas.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="thumbs-slide__car">Mersedes Benz V-Class</div>
+                </div>
+                <div class="thumbs-fleets__slide thumbs-slide">
+                  <div class="thumbs-slide__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/s-class.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="thumbs-slide__car">Mersedes Benz S-Class</div>
+                </div>
+                <div class="thumbs-fleets__slide thumbs-slide">
+                  <div class="thumbs-slide__image-ibg">
+                    <img src="img/content-images/slider-main/m5.png" alt="" />
+                  </div>
+                  <div class="thumbs-slide__car">BMW M5 F90 Competition</div>
+                </div>
+                <div class="thumbs-fleets__slide thumbs-slide">
+                  <div class="thumbs-slide__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/v-clas.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="thumbs-slide__car">Mersedes Benz V-Class</div>
+                </div>
+                <div class="thumbs-fleets__slide thumbs-slide">
+                  <div class="thumbs-slide__image-ibg">
+                    <img
+                      src="img/content-images/slider-main/s-class.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="thumbs-slide__car">Mersedes Benz S-Class</div>
+                </div>
+                <div class="thumbs-fleets__slide thumbs-slide">
+                  <div class="thumbs-slide__image-ibg">
+                    <img src="img/content-images/slider-main/m5.png" alt="" />
+                  </div>
+                  <div class="thumbs-slide__car">BMW M5 F90 Competition</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__partners partners">
+          <div class="partners__container">
+            <div class="partners__body">
+              <div class="partners__item">
+                <img src="img/content-images/brands/chpard.png" alt="" />
+              </div>
+              <div class="partners__item">
+                <img src="img/content-images/brands/geneve.png" alt="" />
+              </div>
+              <div class="partners__item">
+                <img src="img/content-images/brands/emirates.png" alt="" />
+              </div>
+              <div class="partners__item">
+                <img src="img/content-images/brands/iwc.png" alt="" />
+              </div>
+              <div class="partners__item">
+                <img src="img/content-images/brands/cartier.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="page__why-us why-us">
+          <svg
+            class="lines lines_04"
+            width="1913"
+            height="707"
+            viewBox="0 0 1913 707"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="lines__path"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1438.37 25.1314C1558.65 -21.6733 1674.53 0.82527 1739.1 60.2295C1757.33 77.007 1771.47 96.7289 1780.45 118.66C1801.47 140.796 1813.79 167.691 1814.33 197.471C1814.98 233.529 1798.38 273.726 1759.22 314.735C1731.07 344.205 1684.27 371.527 1623.61 395.372C1588.74 412.975 1548.35 428.99 1503.46 443.176C1452.54 459.27 1395.8 473.016 1334.74 484.06C1341.03 493.576 1348.15 502.814 1356.14 511.711C1399.19 559.669 1467.41 597.764 1566.69 616.128C1884.52 674.915 2039.13 557.318 2076.68 491.396L2077.55 491.891C2039.73 558.296 1884.61 675.949 1566.51 617.111C1467.07 598.717 1398.63 560.54 1355.4 512.379C1347.27 503.333 1340.04 493.936 1333.66 484.254C1308.56 488.777 1282.73 492.845 1256.27 496.431C1265.97 517.899 1278.38 538.485 1293.74 557.762C1340.54 616.492 1414.66 663.127 1522.53 685.608C1867.84 757.572 2035.85 613.628 2076.67 532.872L2077.56 533.323C2036.49 614.567 1867.97 758.623 1522.33 686.587C1414.27 664.068 1339.92 617.328 1292.96 558.386C1277.48 538.958 1264.98 518.209 1255.23 496.571C1213.74 502.173 1170.71 506.592 1126.54 509.735C843.125 529.902 512.805 497.499 240.244 387.464C131.281 343.474 48.736 323.104 -12.9395 319.155C-74.616 315.205 -115.366 327.678 -140.814 349.305C-166.256 370.926 -176.491 401.771 -176.98 434.761C-177.469 467.757 -168.205 502.857 -154.698 532.892L-155.61 533.302C-169.16 503.171 -178.471 467.925 -177.98 434.747C-177.488 401.563 -167.186 370.404 -141.462 348.543C-115.743 326.687 -74.6975 314.198 -12.8755 318.157C48.948 322.116 131.604 342.526 240.619 386.536C513.003 496.501 843.163 528.897 1126.47 508.737C1170.51 505.604 1213.42 501.2 1254.81 495.62C1252.14 489.64 1249.68 483.594 1247.42 477.489C1229.47 479.309 1211.27 480.919 1192.88 482.31C927.917 502.351 620.903 476.926 374.554 376.932C191.046 302.446 67.2814 262.378 -4.3645 253.202C-22.2715 250.909 -36.8977 250.549 -48.3743 252.054C-59.8562 253.559 -68.1326 256.925 -73.4023 262.032C-78.6545 267.123 -80.981 274.005 -80.4456 282.695C-79.9092 291.403 -76.4985 301.906 -70.2874 314.163L-71.1794 314.616C-77.4197 302.3 -80.8955 291.658 -81.4438 282.757C-81.9932 273.839 -79.6023 266.649 -74.0981 261.314C-68.6118 255.997 -60.0933 252.582 -48.5042 251.062C-36.9099 249.542 -22.1897 249.911 -4.2373 252.21C67.5543 261.405 191.431 301.523 374.93 376.006C621.09 475.923 927.937 501.346 1192.8 481.313C1211.1 479.929 1229.2 478.328 1247.07 476.52C1233.08 438.247 1227.1 397.713 1227.95 357.149C1230.93 214.802 1318.01 71.969 1438.37 25.1314ZM1248.09 476.415C1234.09 438.199 1228.1 397.706 1228.95 357.17C1231.92 215.143 1318.82 72.7258 1438.73 26.0634C1558.73 -20.6319 1674.19 1.86954 1738.42 60.9654C1755.9 77.0454 1769.58 95.8344 1778.54 116.68C1774.64 112.725 1770.46 108.928 1766.02 105.3C1706.59 56.7682 1599.93 38.396 1489.24 76.6256C1378.46 114.885 1298.28 231.579 1295.53 347.919C1294.56 388.91 1303.21 429.864 1323.52 467.328C1298.93 470.766 1273.76 473.805 1248.09 476.415ZM1781.48 121.222C1801.28 142.838 1812.81 168.83 1813.33 197.489C1813.98 233.21 1797.53 273.165 1758.49 314.044C1732 341.789 1688.82 367.675 1632.95 390.549C1675.35 368.141 1708.94 343.275 1731.7 316.421C1774.24 266.227 1792.26 217.05 1791.55 172.964C1791.25 154.741 1787.76 137.397 1781.48 121.222ZM1623.2 394.458C1669.92 370.864 1706.64 344.437 1730.94 315.774C1773.36 265.718 1791.25 216.769 1790.55 172.98C1790.24 153.988 1786.43 135.955 1779.6 119.212C1775.23 114.622 1770.48 110.238 1765.39 106.075C1706.28 57.8116 1600.01 39.4261 1489.57 77.5708C1379.21 115.686 1299.27 231.994 1296.53 347.943C1295.57 388.891 1304.23 429.789 1324.58 467.18C1405.96 455.757 1480.89 439.957 1545.73 420.815C1573.51 412.614 1599.42 403.801 1623.2 394.458ZM1613.33 399.328C1580.84 415 1543.87 429.36 1503.16 442.223C1452.16 458.34 1395.32 472.102 1334.14 483.152C1330.9 478.212 1327.89 473.198 1325.09 468.118C1406.37 456.693 1481.22 440.902 1546.01 421.774C1569.87 414.729 1592.37 407.23 1613.33 399.328ZM1333.07 483.345C1308.02 487.852 1282.24 491.906 1255.84 495.48C1253.17 489.513 1250.71 483.478 1248.45 477.384C1274.17 474.765 1299.39 471.716 1324.03 468.267C1326.83 473.361 1329.84 478.39 1333.07 483.345Z"
+              fill="url(#paint0_linear_342_95)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_342_95"
+                x1="564.891"
+                y1="1162.6"
+                x2="1000.01"
+                y2="28.0082"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="white" />
+                <stop offset="1" stop-color="white" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="why-us__container">
+            <div class="why-us__header">
+              <h2 class="why-us__title title">Why Choose limogroup?</h2>
+              <div class="why-us__subtitle subtitle">
+                Our main advantages are to be chosen by us
+              </div>
+            </div>
+            <div class="why-us__cards">
+              <div class="why-us__card card-why-us">
+                <div class="card-why-us__image-ibg">
+                  <img
+                    src="img/content-images/why-us/online-reservations.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-why-us__text">
+                  <div class="card-why-us__title">Online Reservation</div>
+                  <div class="card-why-us__description">
+                    No need to leave the house and go somewhere. Call our
+                    drivers online, choosing the right car for yourself.
+                  </div>
+                </div>
+              </div>
+              <div class="why-us__card card-why-us">
+                <div class="card-why-us__image-ibg">
+                  <img
+                    src="img/content-images/why-us/prof-drivers.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-why-us__text">
+                  <div class="card-why-us__title">Professional Drivers</div>
+                  <div class="card-why-us__description">
+                    Limogroup chauffeurs are among the best trained and most
+                    experienced professionals in the industry.
+                  </div>
+                </div>
+              </div>
+              <div class="why-us__card card-why-us">
+                <div class="card-why-us__image-ibg">
+                  <img src="img/content-images/why-us/prestige.jpg" alt="" />
+                </div>
+                <div class="card-why-us__text">
+                  <div class="card-why-us__title">Prestige Vehicles</div>
+                  <div class="card-why-us__description">
+                    All our cars radiate maximum comfort and safety, as well as
+                    the latest innovations that our industry can offer.
+                  </div>
+                </div>
+              </div>
+              <div class="why-us__card card-why-us">
+                <div class="card-why-us__image-ibg">
+                  <img
+                    src="img/content-images/why-us/online-payment.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-why-us__text">
+                  <div class="card-why-us__title">Online Payment</div>
+                  <div class="card-why-us__description">
+                    For the convenience of our customers, we have made an online
+                    payment system, you just have to wait for your car
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__contact-us contact-us">
+          <div class="contact-us__container">
+            <div class="contact-us__header">
+              <h2 class="contact-us__title title">Contact us</h2>
+              <div class="contact-us__subtitle subtitle">
+                Perhaps you have any questions? Please write to us
+              </div>
+            </div>
+            <div class="contact-us__body">
+              <div class="contact-us__form form-contact-us">
+                <form
+                  id="contactForm"
+                  class="form-contact-us__body"
+                  action="#"
+                  method="POST"
+                >
+                  <div class="form-contact-us__item">
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-contact-us__input input"
+                      data-validate
+                      data-required
+                      placeholder="Name..."
+                    />
+                  </div>
+                  <div class="form-contact-us__item">
+                    <input
+                      id="email"
+                      type="email"
+                      class="form-contact-us__input input"
+                      data-validate
+                      data-required="email"
+                      placeholder="example@gmail.com"
+                    />
+                  </div>
+                  <div class="form-contact-us__item">
+                    <input
+                      id="phone"
+                      type="tel"
+                      class="form-contact-us__input input"
+                      placeholder="+998 90 901  54 55"
+                    />
+                  </div>
+                  <div class="form-contact-us__item">
+                    <textarea
+                      id="message"
+                      type="text"
+                      class="form-contact-us__input input"
+                      placeholder="Message..."
+                    ></textarea>
+                  </div>
+                  <div class="form-contact-us__bottom">
+                    <div class="form-contact-us__item">
+                      <div class="checkbox">
+                        <input
+                          type="checkbox"
+                          data-error="agreement required"
+                          checked
+                          id="agreement"
+                          name="agreement"
+                          class="checkbox__input"
+                          data-required
+                          data-validate
+                        />
+                        <label for="agreement" class="checkbox__label"
+                          >I agree to the Terms of Service and Privacy
+                          Policy.</label
+                        >
+                      </div>
+                    </div>
+                    <button type="submit" class="form-contact-us__button">
+                      Submit Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="contact-us__image-ibg">
+                <img src="img/content-images/contact-us.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__column column-footer">
+                <h3 class="column-footer__title">Subscribe our newsletter</h3>
+                <div class="column-footer__subtitle">Want to know about our offers first?</div>
+                <form class="column-footer__form" action="#" method="GET">
+                    <input class="column-footer__input" id="emailFooter" type="email" data-validate data-required="email" placeholder="example@gmail.com">
+                    <button type="submit" class="column-footer__button">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer__column column-footer">
+                <a href="" class="column-footer__logo"><img src="img/content-icons/footer-logo.png" alt=""></a>
+                <ul class="column-footer__list">
+                    <li class="column-footer__item"><a href="" class="column-footer__link">Legal</a></li>
+                    <li class="column-footer__item"><a href="" class="column-footer__link">Privacy Policy</a></li>
+                    <li class="column-footer__item"><a href="" class="column-footer__link">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-phone"></div>
+                <div class="bottom-footer__info"><a href="tel:+41798969696">+41 79 896 96 96</a></div>
+            </div>
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-location"></div>
+                <div class="bottom-footer__info"> ch. des Saules 19, 1800 Vevey, <br> Switzerland</div>
+            </div>
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-mail"></div>
+                <div class="bottom-footer__info">info@limogroup.ch</div>
+            </div>
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-clock"></div>
+                <div class="bottom-footer__info">Every Day <br> Around the clock</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="copyright__container">
+            <button type="button" class="scroll-to-top _icon-arrow-up"></button>           
+            <div class="copyright-text">Copyright © 2022 The Limousine. All Rights Reserved.</div>
+        </div>
+    </div>
+</footer>
+ <div id="contact" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close-popup type="button" class="popup__close close-popup"></button>
+            <form id="contactFormPopup" class="popup__body" action="#" method="GET">
+                <div class="popup__item">
+                    <input id="name" type="text" class="popup__input input" data-validate data-required placeholder="Name...">
+                </div>
+                <div class="popup__item">
+                    <input id="email" type="email" class="popup__input input" data-validate data-required="email" placeholder="example@gmail.com">
+                </div>
+                <div class="popup__item">
+                    <input id="phone" type="tel" class="popup__input input" placeholder="+998 90 901  54 55">
+                </div>
+                <div class="popup__item">
+                    <textarea id="message" type="text" class="popup__input input" placeholder="Message..."></textarea>
+                </div>
+                <div class="popup__bottom">
+                    <div class="popup__item">
+                        <div class="popup-checkbox">
+                            <input type="checkbox" data-error="agreement required" checked id="popupAgreement" name="agreement" class="popup-checkbox__input" data-required data-validate>
+                            <label for="popupAgreement" class="popup-checkbox__label">I agree to the Terms of Service and Privacy Policy.</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="popup-submit__button">Submit Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

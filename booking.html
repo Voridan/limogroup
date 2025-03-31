@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "img/content-icons/logo-icon.svg">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+  <body>
+    <div class="wrapper">
+      <header class="header" data-lp>
+  <div class="header__container">
+    <a href="https://limogroup.ch/" target="_blank" class="header__logo"
+      ><img src="img/content-icons/logo.png" alt=""
+    /></a>
+    <div class="header__menu menu">
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a data-goto=".hero-section" id="#home" class="menu__link active"
+              >Home</a
+            >
+          </li>
+          <li class="menu__item">
+            <a data-goto=".about-us-page" id="#about" class="menu__link"
+              >About Us</a
+            >
+          </li>
+          <li class="menu__item">
+            <a data-goto=".services-page" id="#services" class="menu__link"
+              >Our Services</a
+            >
+          </li>
+          <li class="menu__item">
+            <a data-goto=".fleets" id="#fleets" class="menu__link">Fleets</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__actions actions-header">
+      <a href="tel:+41798969696" class="actions-header__call _icon-phone"
+        ><span>+41 79 896 96 96</span></a
+      >
+      <div data-spollers="767.98,min" class="langs-actions__spoiler">
+        <button type="button" data-spoller class="langs-actions__title">
+          ENG
+        </button>
+        <div class="langs-actions__body">
+          <ul data-da=".menu__list, 767.98" class="lang-list">
+            <li class="lang-list__item">
+              <a class="langs-actions__lang" href="">ENG</a>
+            </li>
+            <li class="lang-list__item">
+              <a class="langs-actions__lang" href="">LANG</a>
+            </li>
+            <li class="lang-list__item">
+              <a class="langs-actions__lang" href="">LANG</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button data-popup="#contact" class="actions-header__contact-btn">
+        Contact Us
+      </button>
+    </div>
+    <button type="button" class="icon-menu"><span></span></button>
+  </div>
+</header>
+
+      <main class="page__booking booking-page">
+        <div class="booking-page__top top-booking-page">
+          <div class="top-booking-page__container ibg">
+            <img src="img/booking-bg.jpg" alt="" />
+            <h2 class="top-booking-page__title">Booking</h2>
+            <div class="top-booking-page__subtitle">HOME - BOOKING</div>
+          </div>
+        </div>
+        <div class="booking-page__form form-booking-page">
+          <div class="form-booking-page__container">
+            <div class="form-booking-page__progress progress-form-booking">
+              <div class="progress-form-booking__body">
+                <div class="progress-form-booking__line"></div>
+                <div class="progress-form-booking__item item-progress">
+                  <div class="item-progress__top">
+                    <div class="item-progress__number">1</div>
+                    <div class="item-progress__checked">
+                      <img src="img/content-icons/checked.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="item-progress__label">Enter Ride Details</div>
+                </div>
+                <div class="progress-form-booking__item item-progress">
+                  <div class="item-progress__top">
+                    <div class="item-progress__number">2</div>
+                    <div class="item-progress__checked">
+                      <img src="img/content-icons/checked.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="item-progress__label">Choose a Vehicle</div>
+                </div>
+                <div class="progress-form-booking__item item-progress">
+                  <div class="item-progress__top">
+                    <div class="item-progress__number">3</div>
+                    <div class="item-progress__checked">
+                      <img src="img/content-icons/checked.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="item-progress__label">Enter Contact Details</div>
+                </div>
+                <div class="progress-form-booking__item item-progress">
+                  <div class="item-progress__top">
+                    <div class="item-progress__number">4</div>
+                    <div class="item-progress__checked">
+                      <img src="img/content-icons/checked.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="item-progress__label">Booking Summary</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-booking-page__body">
+              <form
+                data-message="aaaaaaa"
+                id="mainForm"
+                action="#"
+                method="get"
+                class="form-booking-page__form form-booking"
+              >
+                <aside hidden class="form-booking-page__info form-info-aside">
+                  <div class="form-info-aside__main">
+                    <div class="form-info-aside__lavel">Summary</div>
+                    <div class="form-info-aside__row">
+                      <div class="form-info-aside__input-type">
+                        SERVICE TYPE
+                      </div>
+                      <div class="form-info-aside__input-value"></div>
+                    </div>
+                    <div class="form-info-aside__row">
+                      <div class="form-info-aside__input-type">
+                        PICKUP DATE, TIME
+                      </div>
+                      <div class="form-info-aside__input-value"></div>
+                    </div>
+                    <div class="form-info-aside__row">
+                      <div class="form-info-aside__input-type">
+                        PICKUP LOCATION
+                      </div>
+                      <div class="form-info-aside__input-value"></div>
+                    </div>
+                    <div class="form-info-aside__row">
+                      <div class="form-info-aside__input-type">
+                        DROP OFF LOCATION
+                      </div>
+                      <div class="form-info-aside__input-value"></div>
+                    </div>
+
+                    <div class="form-info-aside__row">
+                      <div class="form-info-aside__input-type">VEHICLE</div>
+                      <div class="form-info-aside__input-value"></div>
+                    </div>
+                  </div>
+                  <div class="form-info-aside__total total-info">
+                    <div class="total-info__label">Total</div>
+                    <div class="total-info__price"></div>
+                  </div>
+                </aside>
+                <div hidden data-tabs class="ride-details__tabs tabs-form">
+                  <nav data-tabs-titles class="ride-details__navigation">
+                    <button type="button" class="ride-details__title">
+                      Distance
+                    </button>
+                    <button type="button" class="ride-details__title">
+                      Hourly
+                    </button>
+                  </nav>
+                  <div data-tabs-body class="ride-details__content">
+                    <div class="ride-details__block block-ride-details">
+                      <div class="block-ride-details__fields">
+                        <div class="block-ride-details__field">
+                          <label
+                            for="date"
+                            class="block-ride-details__label date-label"
+                            title="Enter a valid date"
+                            data-tippy-content
+                            >Pick Up Date</label
+                          >
+                          <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            class="block-ride-details__input date-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="time"
+                            class="block-ride-details__label time-label"
+                            data-tippy-content
+                            >Pick Up Time</label
+                          >
+                          <input
+                            type="time"
+                            name="time"
+                            id="time"
+                            class="block-ride-details__input time-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="pickup"
+                            class="block-ride-details__label pickup-label"
+                            data-tippy-content
+                            >Pick Up Location</label
+                          >
+                          <input
+                            type="text"
+                            name="pickup"
+                            id="pickup"
+                            class="block-ride-details__input"
+                            placeholder="Enter a location"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="dropoff"
+                            class="block-ride-details__label location-label"
+                            >Drop Off Location</label
+                          >
+                          <input
+                            type="text"
+                            name="dropoff"
+                            id="dropoff"
+                            class="block-ride-details__input"
+                            placeholder="Enter a location"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ride-details__block block-ride-details">
+                      <div class="block-ride-details__fields">
+                        <div class="block-ride-details__field">
+                          <label
+                            for="date"
+                            class="block-ride-details__label date-label"
+                            >Pick Up Date</label
+                          >
+                          <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            class="block-ride-details__input date-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="time"
+                            class="block-ride-details__label time-label"
+                            >Pick Up Time</label
+                          >
+                          <input
+                            type="time"
+                            name="time"
+                            id="time"
+                            class="block-ride-details__input time-input"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="pickup"
+                            class="block-ride-details__label pickup-label"
+                            >Pick Up Location</label
+                          >
+                          <input
+                            type="text"
+                            name="pickup"
+                            id="pickup"
+                            class="block-ride-details__input"
+                            placeholder="Enter a location"
+                          />
+                        </div>
+                        <div class="block-ride-details__field">
+                          <label
+                            for="duration"
+                            class="block-ride-details__label location-label"
+                            >Duration (in hours)</label
+                          >
+                          <select
+                            name="duration"
+                            id="duration"
+                            form="hourlyForm"
+                            class="block-ride-details__input"
+                            data-show-selected
+                            data-speed="300"
+                            data-scroll="200"
+                          >
+                            <option value="1" selected>1 hour</option>
+                            <option value="2">2 hours</option>
+                            <option value="3">3 hours</option>
+                            <option value="4">4 hours</option>
+                            <option value="5">5 hours</option>
+                            <option value="6">6 hours</option>
+                            <option value="7">7 hours</option>
+                            <option value="8">8 hours</option>
+                            <option value="9">9 hours</option>
+                            <option value="10">10 hours</option>
+                            <option value="11">11 hours</option>
+                            <option value="12">12 hours</option>
+                            <option value="13">13 hours</option>
+                            <option value="14">14 hours</option>
+                            <option value="15">15 hours</option>
+                            <option value="16">16 hours</option>
+                            <option value="17">17 hours</option>
+                            <option value="18">18 hours</option>
+                            <option value="19">19 hours</option>
+                            <option value="20">20 hours</option>
+                            <option value="21">21 hours</option>
+                            <option value="22">22 hours</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div hidden class="form-booking__vehicle vehicle-form">
+                  <div class="vehicle-form__row">
+                    <div class="vehicle-form__image">
+                      <img
+                        src="img/content-images/slider-main/v-clas.png"
+                        alt="Mersedes Benz V-Class"
+                      />
+                    </div>
+                    <div class="vehicle-form__body row-body">
+                      <div class="row-body__line">
+                        <div class="row-body__text">
+                          <div class="row-body__car">Mersedes Benz V-Class</div>
+                          <div class="row-body__price">$445.00</div>
+                        </div>
+                        <div class="row-body__input">
+                          <input
+                            type="checkbox"
+                            name="mercedesBenzVclass"
+                            class="row-body__select"
+                            id="select1"
+                          />
+                          <label for="select1">Select</label>
+                        </div>
+                      </div>
+                      <div class="row-body__line">
+                        <div
+                          data-spollers
+                          class="row-body__more-info more-info"
+                        >
+                          <div class="more-info__spoiler">
+                            <button
+                              type="button"
+                              data-spoller
+                              class="more-info__title _icon-arrow"
+                            >
+                              More info
+                            </button>
+                            <div class="more-info__body">
+                              <p class="more-info__text">
+                                This car unites the perfection of luxury,
+                                driving and comfort. Sneak up on an incredibly
+                                comfortable sofa and enjoy the trip. Our
+                                guarantee is that you will not be disappointed
+                                with our fleet, we are proud that we provide
+                                top-class luxury travel.
+                              </p>
+                              <div class="more-info__offer">We offer:</div>
+                              <ul class="more-info__list">
+                                <li class="more-info__item">
+                                  100% Luxurious Fleet
+                                </li>
+                                <li class="more-info__item">
+                                  All Our Fleet Are Fully Valeted & Serviced
+                                </li>
+                                <li class="more-info__item">
+                                  A Safe & Secure Journey
+                                </li>
+                                <li class="more-info__item">
+                                  Comfortable And Enjoyable
+                                </li>
+                                <li class="more-info__item">
+                                  Clean, Polite & Knowledgeable
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row-body__info info-row-body">
+                          <div class="info-row-body__item">
+                            <div class="info-row-body__number">7</div>
+                            <div class="info-row-body__icon">
+                              <img
+                                src="img/icons/seats.png"
+                                alt="seats number"
+                              />
+                            </div>
+                          </div>
+                          <div class="info-row-body__item">
+                            <div class="info-row-body__number">7</div>
+                            <div class="info-row-body__icon">
+                              <img
+                                src="img/icons/bags.png"
+                                alt="bags number"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vehicle-form__row">
+                    <div class="vehicle-form__image">
+                      <img
+                        src="img/content-images/slider-main/s-class.png"
+                        alt="Mersedes Benz S-Class"
+                      />
+                    </div>
+                    <div class="vehicle-form__body row-body">
+                      <div class="row-body__line">
+                        <div class="row-body__text">
+                          <div class="row-body__car">Mersedes Benz S-Class</div>
+                          <div class="row-body__price">$480.00</div>
+                        </div>
+                        <div class="row-body__input">
+                          <input
+                            type="checkbox"
+                            name="mercedesBenzSclass"
+                            class="row-body__select"
+                            id="select2"
+                          />
+                          <label for="select2">Select</label>
+                        </div>
+                      </div>
+                      <div class="row-body__line">
+                        <div
+                          data-spollers
+                          class="row-body__more-info more-info"
+                        >
+                          <div class="more-info__spoiler">
+                            <button
+                              type="button"
+                              data-spoller
+                              class="more-info__title _icon-arrow"
+                            >
+                              More info
+                            </button>
+                            <div class="more-info__body">
+                              <p class="more-info__text">
+                                The longest version of the luxury limousine from
+                                Mercedes. It provides superb comfort of
+                                traveling for 5 passengers. Our guarantee is
+                                that you will not be disappointed with our
+                                fleet, we are proud that we provide top-class
+                                luxury travel.
+                              </p>
+                              <div class="more-info__offer">We offer:</div>
+                              <ul class="more-info__list">
+                                <li class="more-info__item">
+                                  100% Luxurious Fleet
+                                </li>
+                                <li class="more-info__item">
+                                  All Our Fleet Are Fully Valeted & Serviced
+                                </li>
+                                <li class="more-info__item">
+                                  A Safe & Secure Journey
+                                </li>
+                                <li class="more-info__item">
+                                  Comfortable And Enjoyable
+                                </li>
+                                <li class="more-info__item">
+                                  Clean, Polite & Knowledgeable
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row-body__info info-row-body">
+                          <div class="info-row-body__item">
+                            <div class="info-row-body__number">2</div>
+                            <div class="info-row-body__icon">
+                              <img
+                                src="img/icons/seats.png"
+                                alt="seats number"
+                              />
+                            </div>
+                          </div>
+                          <div class="info-row-body__item">
+                            <div class="info-row-body__number">2</div>
+                            <div class="info-row-body__icon">
+                              <img
+                                src="img/icons/bags.png"
+                                alt="bags number"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vehicle-form__row">
+                    <div class="vehicle-form__image">
+                      <img
+                        src="img/content-images/slider-main/m5.png"
+                        alt="BMW  M5 F90 Competition"
+                      />
+                    </div>
+                    <div class="vehicle-form__body row-body">
+                      <div class="row-body__line">
+                        <div class="row-body__text">
+                          <div class="row-body__car">
+                            BMW M5 F90 Competition
+                          </div>
+                          <div class="row-body__price">$390.00</div>
+                        </div>
+                        <div class="row-body__input">
+                          <input
+                            type="checkbox"
+                            name="m5F90Competition"
+                            class="row-body__select"
+                            id="select3"
+                          />
+                          <label for="select3">Select</label>
+                        </div>
+                      </div>
+                      <div class="row-body__line">
+                        <div
+                          data-spollers
+                          class="row-body__more-info more-info"
+                        >
+                          <div class="more-info__spoiler">
+                            <button
+                              type="button"
+                              data-spoller
+                              class="more-info__title _icon-arrow"
+                            >
+                              More info
+                            </button>
+                            <div class="more-info__body">
+                              <p class="more-info__text">
+                                The mid-size luxury sedan by BMW with great V8
+                                engine with both natural aspiration and
+                                turbocharging. A great option for corporate
+                                travel. Our guarantee is that you will not be
+                                disappointed with our fleet, we are proud that
+                                we provide top-class luxury travel.
+                              </p>
+                              <div class="more-info__offer">We offer:</div>
+                              <ul class="more-info__list">
+                                <li class="more-info__item">
+                                  100% Luxurious Fleet
+                                </li>
+                                <li class="more-info__item">
+                                  All Our Fleet Are Fully Valeted & Serviced
+                                </li>
+                                <li class="more-info__item">
+                                  A Safe & Secure Journey
+                                </li>
+                                <li class="more-info__item">
+                                  Comfortable And Enjoyable
+                                </li>
+                                <li class="more-info__item">
+                                  Clean, Polite & Knowledgeable
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row-body__info info-row-body">
+                          <div class="info-row-body__item">
+                            <div class="info-row-body__number">2</div>
+                            <div class="info-row-body__icon">
+                              <img
+                                src="img/icons/seats.png"
+                                alt="seats number"
+                              />
+                            </div>
+                          </div>
+                          <div class="info-row-body__item">
+                            <div class="info-row-body__number">2</div>
+                            <div class="info-row-body__icon">
+                              <img
+                                src="img/icons/bags.png"
+                                alt="bags number"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  hidden
+                  class="form-booking__contact-details contact-details"
+                >
+                  <div class="contact-details__title">CONTACT DETAILS</div>
+                  <div class="contact-details__fields">
+                    <div class="contact-details__field">
+                      <input
+                        type="text"
+                        name="firstName"
+                        class="contact-details__name contact-details__input"
+                        placeholder="First Name"
+                        data-required
+                      />
+                    </div>
+                    <div class="contact-details__field">
+                      <input
+                        type="text"
+                        name="lastName"
+                        class="contact-details__surname contact-details__input"
+                        placeholder="Last Name"
+                        data-required
+                      />
+                    </div>
+                    <div class="contact-details__field">
+                      <input
+                        type="text"
+                        name="email"
+                        class="contact-details__email contact-details__input"
+                        placeholder="E-mail address"
+                        data-required
+                        data-validate="email"
+                      />
+                    </div>
+                    <div class="contact-details__field">
+                      <input
+                        type="text"
+                        name="phone"
+                        class="contact-details__phone contact-details__input"
+                        placeholder="Phone number"
+                        data-required
+                      />
+                    </div>
+                    <div
+                      class="contact-details__field contact-details__field_textarea"
+                    >
+                      <textarea
+                        type="text"
+                        name="comments"
+                        class="contact-details__input"
+                        placeholder="Comments..."
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="contact-details__payment">
+                    <div class="contact-details__payment-label">
+                      Choose payment method
+                    </div>
+                    <div class="contact-details__payment-methods">
+                      <div class="contact-details__payment-method -ibg">
+                        <input
+                          type="radio"
+                          name="paymentMethod"
+                          id="stripe"
+                          value="stripe"
+                          class="payment-service"
+                        />
+                        <label for="stripe"
+                          ><img src="img/content-images/stripe.jpg" alt=""
+                        /></label>
+                      </div>
+                      <div class="contact-details__payment-method -ibg">
+                        <input
+                          type="radio"
+                          name="paymentMethod"
+                          id="paypal"
+                          value="paypal"
+                          class="payment-service"
+                        />
+                        <label for="paypal"
+                          ><img src="img/content-images/paypal.jpg" alt=""
+                        /></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div hidden class="form-booking__summary summary-form-booking">
+                  <div class="summary-form-booking__column column-contacts">
+                    <div class="column-contacts__info">
+                      <div class="column-contacts__title">
+                        Contact & Billing Info
+                      </div>
+                      <div class="column-contacts__row">
+                        <div class="column-contacts__input-type">
+                          FIRST NAME
+                        </div>
+                        <div class="column-contacts__input-value"></div>
+                      </div>
+                      <div class="column-contacts__row">
+                        <div class="column-contacts__input-type">LAST NAME</div>
+                        <div class="column-contacts__input-value"></div>
+                      </div>
+                      <div class="column-contacts__row">
+                        <div class="column-contacts__input-type">
+                          E-MAIL ADDRESS
+                        </div>
+                        <div class="column-contacts__input-value"></div>
+                      </div>
+                      <div class="column-contacts__row">
+                        <div class="column-contacts__input-type">
+                          PHONE NUMBER
+                        </div>
+                        <div class="column-contacts__input-value"></div>
+                      </div>
+                      <div class="column-contacts__row">
+                        <div class="column-contacts__input-type">COMMENTS</div>
+                        <div class="column-contacts__input-value"></div>
+                      </div>
+                    </div>
+                    <div class="column-contacts__payment">
+                      <div class="column-contacts__title">Payment Method</div>
+                      <div class="column-contacts__row">
+                        <div class="column-contacts__input-type">
+                          YOUR CHOICE
+                        </div>
+                        <div
+                          class="column-contacts__input-value payment-choosed"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-form-booking__column column-ride">
+                    <div class="column-ride__content">
+                      <div class="column-ride__lavel">Ride Details</div>
+                      <div class="column-ride__row">
+                        <div class="column-ride__input-type">SERVICE TYPE</div>
+                        <div class="column-ride__input-value"></div>
+                      </div>
+                      <div class="column-ride__row">
+                        <div class="column-ride__input-type">
+                          PICKUP DATE, TIME
+                        </div>
+                        <div class="column-ride__input-value"></div>
+                      </div>
+                      <div class="column-ride__row">
+                        <div class="column-ride__input-type">
+                          PICKUP LOCATION
+                        </div>
+                        <div class="column-ride__input-value"></div>
+                      </div>
+                      <div class="column-ride__row">
+                        <div class="column-ride__input-type">
+                          DROP OFF LOCATION
+                        </div>
+                        <div class="column-ride__input-value"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-form-booking__column column-cars">
+                    <div class="column-cars__pricelist pricelist-column">
+                      <div class="pricelist-column__total">
+                        <span>Total</span
+                        ><span class="total-price">$450.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-booking-page__navigation">
+                  <button
+                    type="button"
+                    class="form-booking-page__prev-btn nav-btn _icon-arrow"
+                  >
+                    prev
+                  </button>
+                  <button
+                    type="button"
+                    class="form-booking-page__next-btn nav-btn _icon-arrow"
+                  >
+                    next
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <div class="footer__column column-footer">
+                <h3 class="column-footer__title">Subscribe our newsletter</h3>
+                <div class="column-footer__subtitle">Want to know about our offers first?</div>
+                <form class="column-footer__form" action="#" method="GET">
+                    <input class="column-footer__input" id="emailFooter" type="email" data-validate data-required="email" placeholder="example@gmail.com">
+                    <button type="submit" class="column-footer__button">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer__column column-footer">
+                <a href="" class="column-footer__logo"><img src="img/content-icons/footer-logo.png" alt=""></a>
+                <ul class="column-footer__list">
+                    <li class="column-footer__item"><a href="" class="column-footer__link">Legal</a></li>
+                    <li class="column-footer__item"><a href="" class="column-footer__link">Privacy Policy</a></li>
+                    <li class="column-footer__item"><a href="" class="column-footer__link">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-phone"></div>
+                <div class="bottom-footer__info"><a href="tel:+41798969696">+41 79 896 96 96</a></div>
+            </div>
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-location"></div>
+                <div class="bottom-footer__info"> ch. des Saules 19, 1800 Vevey, <br> Switzerland</div>
+            </div>
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-mail"></div>
+                <div class="bottom-footer__info">info@limogroup.ch</div>
+            </div>
+            <div class="bottom-footer__item">
+                <div class="bottom-footer__icon _icon-clock"></div>
+                <div class="bottom-footer__info">Every Day <br> Around the clock</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <div class="copyright__container">
+            <button type="button" class="scroll-to-top _icon-arrow-up"></button>           
+            <div class="copyright-text">Copyright © 2022 The Limousine. All Rights Reserved.</div>
+        </div>
+    </div>
+</footer>
+ <div id="contact" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__content">
+            <button data-close-popup type="button" class="popup__close close-popup"></button>
+            <form id="contactFormPopup" class="popup__body" action="#" method="GET">
+                <div class="popup__item">
+                    <input id="name" type="text" class="popup__input input" data-validate data-required placeholder="Name...">
+                </div>
+                <div class="popup__item">
+                    <input id="email" type="email" class="popup__input input" data-validate data-required="email" placeholder="example@gmail.com">
+                </div>
+                <div class="popup__item">
+                    <input id="phone" type="tel" class="popup__input input" placeholder="+998 90 901  54 55">
+                </div>
+                <div class="popup__item">
+                    <textarea id="message" type="text" class="popup__input input" placeholder="Message..."></textarea>
+                </div>
+                <div class="popup__bottom">
+                    <div class="popup__item">
+                        <div class="popup-checkbox">
+                            <input type="checkbox" data-error="agreement required" checked id="popupAgreement" name="agreement" class="popup-checkbox__input" data-required data-validate>
+                            <label for="popupAgreement" class="popup-checkbox__label">I agree to the Terms of Service and Privacy Policy.</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="popup-submit__button">Submit Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/app.min.js"></script>
+    <script src="js/form.min.js"></script>
+  </body>
+</html>
